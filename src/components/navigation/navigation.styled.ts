@@ -10,6 +10,7 @@ const Navigation = styled.nav<{ makeTransparent: boolean }>`
     box-sizing: border-box;
     background: #262d2e;
     padding: 0 20px;
+    z-index: 3;
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
@@ -28,8 +29,9 @@ export const NavButtonsContainer = styled.div<{ visible: boolean }>`
     justify-content: center;
     align-items: center;
     min-height: 400px;
+    box-sizing: border-box;
     @media (max-width: 900px) {
-        background: linear-gradient(to bottom, rgb(220,220,220), rgb(211,211,211));
+        background: #262d2e;
         position: fixed;
         width: 100vw;
         height: 100vh;

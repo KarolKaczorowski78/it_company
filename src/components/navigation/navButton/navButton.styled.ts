@@ -8,6 +8,7 @@ const Button = styled(Link)`
     font-size: 20px;
     font-weight: bold;
     position: relative;
+    font-family: "Averta", sans-serif;
     ::before {
         position: absolute;
         content: '';
@@ -24,6 +25,9 @@ const Button = styled(Link)`
         ::before {
             transform: scaleX(1);
         }
+    }
+    @media (max-width: 900px) {
+        font-size: 25px;
     }
 `;
 
