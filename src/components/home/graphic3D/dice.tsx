@@ -71,7 +71,6 @@ const DiceFace = styled.div<{ tV: string, tVR: string }>`
     position: absolute;
     left: 0;
     top: 0;
-
     background: #31393a;
     border: 2px solid #00db53;
     box-sizing: border-box;

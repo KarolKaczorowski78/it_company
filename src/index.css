@@ -1,4 +1,12 @@
 body {
     margin: 0;
-    background-color: #262d2e;
+    background-color: #202525;
+}
+
+body h1, body h2 {
+    color: white;
+    font-family: "Averta", sans-serif;
+    text-shadow: -5px 15px 10px black;
+    font-weight: bold;
+    font-size: 35px;
 }

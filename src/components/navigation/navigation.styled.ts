@@ -28,9 +28,9 @@ export const NavButtonsContainer = styled.div<{ visible: boolean }>`
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 400px;
     box-sizing: border-box;
     @media (max-width: 900px) {
+        min-height: 400px;
         background: #262d2e;
         position: fixed;
         width: 100vw;

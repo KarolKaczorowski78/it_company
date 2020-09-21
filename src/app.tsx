@@ -1,6 +1,6 @@
 import React, { FunctionComponent, useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
-import Home from './pages/home2';
+import Home from './pages/home';
 import Services from './pages/services';
 import About from './pages/about';
 import Clients from './pages/clients';
