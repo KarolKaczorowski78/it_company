@@ -4,10 +4,11 @@ import Graphic3D from '../components/home/graphic3D/graphic3d';
 import H1 from '../components/universal/h1/h1';
 import RightSide from '../components/home/servicesGrid/rightSide';
 import LeftSide from '../components/home/servicesGrid/leftSide';
+import TestimonialsContainer from '../components/home/testimonials/testimonialsContainer/testimonialsContainer';
 
 const Home = () => {
     return (
-        <>
+        <div style={{ background: '#262d2e' }}>
             <IntroSection>
                 <H1>
                     <span>Our teams develop</span>
@@ -23,8 +24,10 @@ const Home = () => {
                 <LeftSide />
                 <RightSide />
             </ServicesSection>
-            <TestimonialsSection></TestimonialsSection>
-        </>
+            <TestimonialsSection>
+                <TestimonialsContainer />
+            </TestimonialsSection>
+        </div>
     )
 }
 

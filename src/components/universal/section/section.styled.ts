@@ -5,6 +5,7 @@ const Section = styled.section`
     height: auto;
     min-height: 100vh;
     background: #262d2e;
+    position: relative;
 `;
 
 export default Section;

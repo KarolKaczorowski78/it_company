@@ -33,8 +33,8 @@ const RedirectBtn = styled(Link)`
         ::before, ::after {
             position: absolute;
             content: '';
-            left: -10px;
-            bottom: -10px;
+            left: -11px;
+            bottom: -11px;
             background: #00db53;
         }
         ::before {

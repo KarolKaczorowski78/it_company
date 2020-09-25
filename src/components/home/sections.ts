@@ -27,5 +27,5 @@ export const ServicesSection = styled(Section)`
 `;
 
 export const TestimonialsSection = styled(Section)`
-
+    margin-top: 20px;
 `;
