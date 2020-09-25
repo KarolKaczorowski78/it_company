@@ -38,6 +38,7 @@ export const SecondContainer = styled.div`
     & > * {
         position: absolute;
     }
+
 `;
 
 export const Base = styled.div`

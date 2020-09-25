@@ -1,9 +1,10 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useEffect } from 'react';
 import Dice from './dice';
 import { GraphicContainer, SecondContainer,  Base, BasePartBtm, BasePartLft } from './graphic3D.styled';
 import { faCode, faHandshake, faUsersCog, faHistory } from '@fortawesome/free-solid-svg-icons';
 import Principle from './principle';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import introAnimation from '../../../animations/home/sectionOne';
 
 const Graphic3D = () => {
 
@@ -11,6 +12,8 @@ const Graphic3D = () => {
         ['5px', '5px'], ['5px', 'calc(100% - 55px)'], ['calc(100% - 55px)', '5px'], 
         ['calc(100% - 55px)', 'calc(100% - 55px)']
     ]
+
+    useEffect(() => { introAnimation() }, [])
 
     const icons: IconProp[] = [faCode, faHandshake, faUsersCog, faHistory];
 
@@ -23,11 +26,11 @@ const Graphic3D = () => {
 
     return (
         <GraphicContainer>
-            <SecondContainer>   
+            <SecondContainer className="container-3d">   
                 { loadItems() } 
-                <Base />
-                <BasePartBtm />
-                <BasePartLft />
+                <Base className="base" />
+                <BasePartBtm className="base" />
+                <BasePartLft className="base" />
             </SecondContainer>
         </GraphicContainer>
     )
