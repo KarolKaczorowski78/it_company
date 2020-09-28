@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: #202525;
+    overflow-x: hidden;
 }
 
 body h1, body h2 {

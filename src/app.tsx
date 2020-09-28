@@ -9,6 +9,7 @@ import EstimateProject from './pages/estimateProject';
 import NotFound from './pages/notFound';
 import Careers from './pages/careers';
 import Navigation from './components/navigation/navigation';
+import Footer from './components/footer/footer';
 
 const App: FunctionComponent = () => {
 
@@ -37,6 +38,7 @@ const App: FunctionComponent = () => {
                     <Route exact path="/estimate-project" component={ EstimateProject } />
                     <Route exact component={ NotFound } />
                 </Switch>
+                <Footer />
             </Router>
         </div>
     )
