@@ -14,5 +14,3 @@ export enum ABOUT {
 export enum CLIENTS {
 
 }
-
-export default SectionNames;
