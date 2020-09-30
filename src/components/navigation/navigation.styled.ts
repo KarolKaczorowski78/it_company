@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Navigation = styled.nav<{ makeTransparent: boolean }>`
+const Navigation = styled.nav<{ transparent: boolean }>`
     position: fixed;
     top: 0;
     left: 0;
@@ -9,6 +9,8 @@ const Navigation = styled.nav<{ makeTransparent: boolean }>`
     height: 100px;
     box-sizing: border-box;
     background: #262d2e;
+    background: ${({ transparent }) => transparent ? 'transparent' : '#262d2e'};
+    transition: .3s ease-in;
     padding: 0 20px;
     z-index: 3;
     display: flex;

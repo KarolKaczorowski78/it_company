@@ -4,7 +4,7 @@ import capitalizeString from '../../../universal/functions/capitalizeString';
 
 const NavButton = (props: { to: string }) => {
     return (
-        <Button to={ props.to }>
+        <Button to={ `/${props.to}##` }>
             { capitalizeString(props.to.replace(/-/gi, ' ')) }
         </Button>
     )

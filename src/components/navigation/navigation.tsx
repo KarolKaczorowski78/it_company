@@ -11,7 +11,7 @@ const Navigation = (props: props) => {
     const renderLinks = () => Object.values(RouteNames).map(name => <Button to={ name } />);
 
     return (
-        <Nav makeTransparent={ props.scrollVal < window.innerHeight }>
+        <Nav transparent={ props.scrollVal < 100 }>
             <Logo><b>IT</b>inc</Logo>
                 <ShowNavButton visibilityData={ { visible, setVisible } } />
                 <NavButtonsContainer visible={ visible }>

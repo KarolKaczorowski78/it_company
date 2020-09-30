@@ -1,17 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Services from '../../../universal/constants/services';
+import { HashLink } from 'react-router-hash-link';
+import { Services } from '../../../universal/constants/sectionNames';
 import styled from 'styled-components';
+import capitalizeString from '../../../universal/functions/capitalizeString';
 
 const Service = (props: props) => {
     return (
-        <RedirectBtn to={ `/services/#${props.to.toLowerCase()}` }>
-            <span>{ props.name }</span>
+        <RedirectBtn to={ `/services#${props.to}` }>
+            <span>{ capitalizeString(props.name) }</span>
         </RedirectBtn>
     )
 }
 
-const RedirectBtn = styled(Link)`
+const RedirectBtn = styled(HashLink)`
     width: 100%;
     height: 100%;
     width: 90%;

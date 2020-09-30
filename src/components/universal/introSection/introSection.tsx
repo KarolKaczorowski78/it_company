@@ -1,22 +1,26 @@
-import React from 'react';
-import Section, { Image } from './introSection.styled';
-import H1 from '../h1/h1';
-import P from '../p/p';
+import React, { ReactNode, Dispatch, SetStateAction, useEffect } from 'react';
+import Section, { Image, Div} from './introSection.styled';
+import { useInView } from 'react-intersection-observer';
 
 const Intro = (props: props) => {
+
+    const { ref, inView } = useInView({ threshold: .6 });
+    useEffect(() => { inView && props.setPageHash && props.setPageHash('#') }, [inView])
+
     return (
-        <Section>
+        <Section ref={ ref } id="#">
             <Image src={ props.imgUrl } alt="" />
-            <H1>{ props.headling }</H1>
-            <P>{ props.explanation }</P>
+            <Div>
+                { props.children }
+            </Div>
         </Section>
     )
 }
 
 interface props {
-    headling: string;
-    explanation: string;
+    children: ReactNode;
     imgUrl: string;
+    setPageHash?: Dispatch<SetStateAction<string>>
 }
 
 export default Intro;

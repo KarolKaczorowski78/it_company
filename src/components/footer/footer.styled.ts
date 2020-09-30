@@ -24,8 +24,9 @@ export const Ul = styled.ul`
         font-size: 16px;
         font-weight: bold;
         margin: 10px 0;
-        & > svg {
+        & > svg, & > a {
             color: #00db53;
+            text-decoration: none;
         }
     }
 `;

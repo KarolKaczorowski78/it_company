@@ -27,6 +27,13 @@ const Footer = () => {
                 <li><FontAwesomeIcon icon={ faGithubAlt } /> GitHub</li>
                 <li><FontAwesomeIcon icon={ faInstagram } /> Instagram</li>
             </Ul>
+            <Ul>
+                <h2>Resources</h2>
+                <li>Icons made by <a href="https://www.flaticon.com/authors/photo3idea-studio" title="photo3idea_studio">photo3idea_studio</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></li>
+                <li>Icons made by <a href="https://www.flaticon.com/authors/nhor-phai" title="Nhor Phai">Nhor Phai</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></li>
+                <li>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></li>
+                <li>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></li>
+            </Ul>
             <RightsReservedContainer>
                 ITinc Poland | Copyright © | All rights reserved 2020
             </RightsReservedContainer>
