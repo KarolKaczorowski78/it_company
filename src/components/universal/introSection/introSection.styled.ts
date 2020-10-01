@@ -4,7 +4,6 @@ const Section = styled.section`
     height: calc(100vh - 60px);
     width: 100%;
     position: relative;
-    padding: 0 5px;
     @media (max-width: 700px) {
         height: calc(100vh);
     }

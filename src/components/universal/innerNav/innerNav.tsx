@@ -1,12 +1,13 @@
 import React from 'react';
 import Nav from './innerNav.styled';
 import Button from './innerNavButton';
-import { Services } from '../../../universal/constants/sectionNames';
+import { Services, About } from '../../../universal/constants/sectionNames';
+import RouteNames from '../../../universal/constants/routeNames';
 
 const InnerNav = (props: props) => {
 
     const renderButtons = () => props.sectionNames.map((n, i) => 
-                                            <Button scrollToClass={ n } key={ i } />)
+                                        <Button url={ props.url } scrollToClass={ n } key={ i } />)
     return (
         <Nav>
             { renderButtons() }
@@ -15,7 +16,8 @@ const InnerNav = (props: props) => {
 }
 
 interface props {
-    sectionNames: Services[];
+    sectionNames: (About|Services)[];
+    url: RouteNames;
 }
 
 export default InnerNav;

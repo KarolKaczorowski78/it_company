@@ -1,19 +1,17 @@
-import React, { ReactNode, Dispatch, SetStateAction, useEffect } from 'react';
+import React, { ReactNode, Dispatch, SetStateAction } from 'react';
 import Section, { Image, Div} from './introSection.styled';
-import { useInView } from 'react-intersection-observer';
+import InnerSection from '../innerSection';
 
 const Intro = (props: props) => {
-
-    const { ref, inView } = useInView({ threshold: .6 });
-    useEffect(() => { inView && props.setPageHash && props.setPageHash('#') }, [inView])
-
     return (
-        <Section ref={ ref } id="#">
-            <Image src={ props.imgUrl } alt="" />
-            <Div>
-                { props.children }
-            </Div>
-        </Section>
+        <InnerSection name="#">
+            <Section>
+                <Image src={ props.imgUrl } alt="" />
+                <Div>
+                    { props.children }
+                </Div>
+            </Section>
+        </InnerSection>
     )
 }
 

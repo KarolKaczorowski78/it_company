@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components'; 
 import capitalizeString from '../../../universal/functions/capitalizeString';
 import { HashLink } from 'react-router-hash-link';
-import { Services } from '../../../universal/constants/sectionNames';
+import RouteNames from '../../../universal/constants/routeNames';
+import { Services, About } from '../../../universal/constants/sectionNames';
 
 const NavButton = (props: props) => {    
 
@@ -13,13 +14,13 @@ const NavButton = (props: props) => {
         return el && (() => {
             el.scrollIntoView({
                 behavior: 'smooth',
-                block: 'end'
+                block: 'start'
             })
         })()
     }
 
     return (
-        <Button smooth={ true } to={ `/services#${targetId}`} scroll={ handleScroll }>
+        <Button smooth={ true } to={ `/${props.url}#${targetId}`} scroll={ handleScroll }>
             { capitalizeString(props.scrollToClass) }
         </Button>
     )
@@ -55,7 +56,8 @@ const Button = styled(HashLink)`
 `  
 
 interface props {
-    scrollToClass: Services;
+    scrollToClass: Services | About;
+    url: RouteNames;
 }
 
 export default NavButton;

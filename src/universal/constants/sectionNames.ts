@@ -6,9 +6,10 @@ export enum Services {
     PRODUCT_DESIGN = 'product design',
 }
 
-export enum ABOUT {
-    HISTORY = 'history',
-    PRINCIPLES = 'principles',
+export enum About {
+    WHO_ARE_WE = 'who we are',
+    WORKFLOW = 'workflow',
+    CULTURE = 'our culture',
 }
 
 export enum CLIENTS {

@@ -4,8 +4,11 @@ const Section = styled.section`
     width: 100%;
     height: auto;
     min-height: 100vh;
-    background: #262d2e;
+
     position: relative;
-`;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    `;
 
 export default Section;

@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 import SectionProto from '../../universal/section/section.styled';
 
-const Section = styled(SectionProto)<{ index: number }>`
+const Section = styled(SectionProto)`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     min-height: calc(100vh - 100px);
-    flex-direction: ${({ index }) => index % 2 === 0 ? 'row' : 'row-reverse'};
     & > .service-explanation {
         text-align: center;
         display: flex;
