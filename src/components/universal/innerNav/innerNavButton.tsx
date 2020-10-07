@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import capitalizeString from '../../../universal/functions/capitalizeString';
 import { HashLink } from 'react-router-hash-link';
 import RouteNames from '../../../universal/constants/routeNames';
-import { Services, About } from '../../../universal/constants/sectionNames';
+import { Services, About, Careers } from '../../../universal/constants/sectionNames';
 
 const NavButton = (props: props) => {    
 
@@ -56,7 +56,7 @@ const Button = styled(HashLink)`
 `  
 
 interface props {
-    scrollToClass: Services | About;
+    scrollToClass: Services | About | Careers;
     url: RouteNames;
 }
 

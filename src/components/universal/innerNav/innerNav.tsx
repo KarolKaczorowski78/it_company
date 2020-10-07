@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from './innerNav.styled';
 import Button from './innerNavButton';
-import { Services, About } from '../../../universal/constants/sectionNames';
+import { Services, About, Careers } from '../../../universal/constants/sectionNames';
 import RouteNames from '../../../universal/constants/routeNames';
 
 const InnerNav = (props: props) => {
@@ -16,7 +16,7 @@ const InnerNav = (props: props) => {
 }
 
 interface props {
-    sectionNames: (About|Services)[];
+    sectionNames: (About|Services|Careers)[];
     url: RouteNames;
 }
 

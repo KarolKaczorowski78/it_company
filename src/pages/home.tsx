@@ -13,8 +13,8 @@ const Home = () => {
                 <H1>
                     <span>Our teams develop</span>
                     <span> high quality software</span> 
-                    <span> using top technologies,</span>  
-                    <span> precision and efficiency</span> 
+                    <span> using top technologies</span>  
+                    <span> precisely and efficiently</span> 
                     <span> in order to make our </span>
                     <span> customers satisfied.</span>
                 </H1>

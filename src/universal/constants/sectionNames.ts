@@ -12,6 +12,8 @@ export enum About {
     CULTURE = 'our culture',
 }
 
-export enum CLIENTS {
-
+export enum Careers {
+    OPPORTUNITIES = 'your opportunities',
+    JOB_OFFERS = 'job offers',
+    RECRUITMENT_PROCESS = 'recruitment process',
 }
