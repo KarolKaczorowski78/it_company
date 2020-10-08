@@ -11,7 +11,7 @@ const Footer = styled.footer`
     color: white;
     padding: 20px 0;
     flex-wrap: wrap;
-
+    margin-top: 50px;
 `;
 
 export const Ul = styled.ul`

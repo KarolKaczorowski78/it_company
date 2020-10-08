@@ -4,7 +4,6 @@ import Home from './pages/home';
 import Services from './pages/services';
 import About from './pages/about';
 import Clients from './pages/clients';
-import Contact from './pages/contact';
 import EstimateProject from './pages/estimateProject';
 import NotFound from './pages/notFound';
 import Careers from './pages/careers';
@@ -33,7 +32,6 @@ const App: FunctionComponent = () => {
                 <Route exact path="/about" component={ About } />
                 <Route exact path="/clients" component={ Clients } />
                 <Route exact path="/careers" component={ Careers } />
-                <Route exact path="/contact" component={ Contact } />
                 <Route exact path="/estimate-project" component={ EstimateProject } />
                 <Route exact component={ NotFound } />
             </Switch>

@@ -16,7 +16,7 @@ const Services = () => {
                          key={ i } />)
 
     return (
-        <div style={{ background: '#262d2e' }}>
+        <div>
             <IntroSection imgUrl={ ServicesMainImg }>
                 <H1><span>Newest technologies and skilled developers </span>
                     <span>for Your business success.</span></H1>

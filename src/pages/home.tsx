@@ -8,7 +8,7 @@ import TestimonialsContainer from '../components/home/testimonials/testimonialsC
 
 const Home = () => {
     return (
-        <div style={{ background: '#262d2e' }}>
+        <div>
             <IntroSection id="#">
                 <H1>
                     <span>Our teams develop</span>
