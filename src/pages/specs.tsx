@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Clients = () => {
+const Specialists = () => {
     return (
         <>
             
@@ -8,4 +8,4 @@ const Clients = () => {
     )
 }
 
-export default Clients;
+export default Specialists;
