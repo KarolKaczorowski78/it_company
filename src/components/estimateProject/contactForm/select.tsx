@@ -11,13 +11,14 @@ const Select = (props: props) => {
         props.setState(state => {
             const newState = [...state];
             newState.splice(props.index, 1, !newState[props.index])
+            newState[props.index] && props.handleUnfill(() => '');
             return newState;
         })
     }
 
     return (
         <Div>
-            <Button active={ props.state } onClick={ handleClick }>
+            <Button type="button" active={ props.state } onClick={ handleClick }>
                 <FontAwesomeIcon icon={ faCheck } />
             </Button>
             <Span> { capitalizeString(props.service) }</Span>
@@ -54,6 +55,7 @@ interface props {
     index: number;
     setState: Dispatch<SetStateAction<boolean[]>>;
     state: boolean;
+    handleUnfill: Dispatch<SetStateAction<string>>;
 }
 
 export default Select;

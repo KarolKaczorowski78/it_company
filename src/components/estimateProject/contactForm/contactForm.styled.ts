@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 
 const Form = styled.form`
     position: relative;
@@ -18,6 +18,11 @@ const Form = styled.form`
     input, textarea {
         font-size: 17px;
     }
+    .error {
+        color: red;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
 `;
 
 export const Input = styled.input`
@@ -28,10 +33,18 @@ export const Input = styled.input`
     padding: 3px 6px;
     border: none;
     border-bottom: 1px solid #00db53;
+    ::placeholder {
+        color: red;
+    }
 `;
 
 export const Label = styled.label`
     margin-bottom: 7px;
+    & > .error {
+        color: red;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
 `;
 
 export const Textarea = styled.textarea`
@@ -67,18 +80,21 @@ const submitAnim = keyframes`
     }
 `
 
-export const Submit = styled.button`
+export const Submit = styled.button<{ clicable: boolean }>`
     padding: 15px 40px;
     background: #212121;
     box-shadow: 0 0 5px #00db53;
+    background: ${({ clicable }) => clicable ? '#212121' : 'grey'};
     color: #00db53;
     border: none;
     margin-top: 20px;
     font-size: 28px;
     border-radius: 15%;
     font-family: 'Averta', cursive;
+    transition: background .2s ease-out;
     &:hover {
-        animation ${submitAnim} .4s ease-in forwards;
+        cursor: ${({ clicable }) => clicable ? 'pointer' : 'not-allowed'};
+        ${({ clicable }) => clicable && css`animation ${submitAnim} .4s ease-in forwards;`};
     }
 `;
 
