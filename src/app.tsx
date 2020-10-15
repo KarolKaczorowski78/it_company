@@ -30,7 +30,7 @@ const App: FunctionComponent = () => {
                 <Route exact path="/home" component={ Home }  />
                 <Route exact path="/services" component={ Services } />
                 <Route exact path="/about" component={ About } />
-                <Route exact path="/clients" component={ Clients } />
+                <Route exact path="/specialists" component={ Clients } />
                 <Route exact path="/careers" component={ Specialists } />
                 <Route exact path="/estimate-project" component={ EstimateProject } />
                 <Route exact component={ NotFound } />
