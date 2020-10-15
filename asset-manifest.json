@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1b194ff7.chunk.css",
+    "main.js": "/static/js/main.80a3392c.chunk.js",
+    "main.js.map": "/static/js/main.80a3392c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6c3137ea.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6c3137ea.js.map",
+    "static/js/2.b9e481c9.chunk.js": "/static/js/2.b9e481c9.chunk.js",
+    "static/js/2.b9e481c9.chunk.js.map": "/static/js/2.b9e481c9.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.85d642c8bf454e70e848b4654fb73edb.js": "/precache-manifest.85d642c8bf454e70e848b4654fb73edb.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.1b194ff7.chunk.css.map": "/static/css/main.1b194ff7.chunk.css.map",
+    "static/js/2.b9e481c9.chunk.js.LICENSE.txt": "/static/js/2.b9e481c9.chunk.js.LICENSE.txt",
+    "static/media/HR.jpg": "/static/media/HR.df183ad0.jpg",
+    "static/media/Interview.jpg": "/static/media/Interview.31f22a66.jpg",
+    "static/media/PhoneScreen.jpg": "/static/media/PhoneScreen.d67e16b7.jpg",
+    "static/media/SendCV.jpg": "/static/media/SendCV.8c35018c.jpg",
+    "static/media/TechnicalAssesment.jpg": "/static/media/TechnicalAssesment.aad71951.jpg",
+    "static/media/Work.jpg": "/static/media/Work.17df3837.jpg",
+    "static/media/aboutMain.jpg": "/static/media/aboutMain.8812e5a2.jpg",
+    "static/media/aboutOffice.jpg": "/static/media/aboutOffice.4db8c278.jpg",
+    "static/media/aboutWorkflow.jpg": "/static/media/aboutWorkflow.ad00c840.jpg",
+    "static/media/ai.svg": "/static/media/ai.33dac30c.svg",
+    "static/media/careersMain.jpg": "/static/media/careersMain.1be20c3a.jpg",
+    "static/media/design.svg": "/static/media/design.78c38afc.svg",
+    "static/media/estimateProject.jpg": "/static/media/estimateProject.56d0c951.jpg",
+    "static/media/handShake.jpg": "/static/media/handShake.43a3a3f7.jpg",
+    "static/media/mobile.svg": "/static/media/mobile.5a98fb37.svg",
+    "static/media/servicesMain.jpg": "/static/media/servicesMain.8fa4da57.jpg",
+    "static/media/web.svg": "/static/media/web.aa7c1420.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6c3137ea.js",
+    "static/js/2.b9e481c9.chunk.js",
+    "static/css/main.1b194ff7.chunk.css",
+    "static/js/main.80a3392c.chunk.js"
+  ]
+}
