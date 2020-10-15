@@ -10,7 +10,8 @@ const Navigation = (props: props) => {
     const [hidden, setHidden] = useState<boolean>(false);
     const [scrollVal, setScrollVal] = useState<number>(props.scrollVal);
 
-    const renderLinks = () => Object.values(RouteNames).map(name => <Button to={ name } />);
+    const renderLinks = () => Object.values(RouteNames).map(name => 
+        <Button to={ name } setVisible={ setVisible } />);
 
     useEffect(() => {
         setScrollVal(prev => {

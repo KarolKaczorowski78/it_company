@@ -49,20 +49,24 @@ const ImgContainer = styled.div`
     ::before {
         width: 100%;
         height: 100%;
-        background: rgba(38, 45, 46, .7);
+        width: auto;
+        height: auto;
+        padding: 10px;
+        top: 10%;
         position: absolute;
         font-size: 40px;
         content: 'We are always aiming for great relations with our business partners.';
-        text-shadow: 0 0 3px #00db53;
+        text-shadow: 0 0 20px #00db53;
+        text-shadow: 0 0 25px white;
         color: rgb(38, 45, 46);
         color: white;
+        color: #202525;
+
         font-weight: bold;
         font-family: "Averta", sans-serif;
-        top: 0;
-        left: 0;
+
         text-align: center;
-        padding-top: 20%;
-        padding: 20% 10px 0;
+
         box-sizing: border-box;
     }
     @media (max-width: 800px) {

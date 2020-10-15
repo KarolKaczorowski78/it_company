@@ -55,6 +55,9 @@ const Div = styled.div`
     &:hover {
         transform: translateY(-20px);
     }
+    @media (max-width: 800px) {
+        margin-top: 40px;
+    }
 `;
 
 export default MobileContainer;

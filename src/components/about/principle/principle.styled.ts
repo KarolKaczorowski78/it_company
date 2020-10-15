@@ -6,7 +6,7 @@ const Div = styled.div`
     box-sizing: border-box;
     box-shadow: 0 0 15px #121212;
     text-align: center;
-    margin: 5px 15px;
+    margin: 30px 15px;
     display: inline-flex;
     justify-content: center;
     align-items: center;

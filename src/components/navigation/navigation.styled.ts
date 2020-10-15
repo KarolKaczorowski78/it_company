@@ -8,10 +8,9 @@ const Navigation = styled.nav<{ transparent: boolean, hidden: boolean }>`
     max-width: 100%;
     height: 100px;
     box-sizing: border-box;
-    background: #262d2e;
     transform-origin: top;
     transform: ${({ hidden }) => hidden ? 'scaleY(0)' : 'scaleY(1)'};
-    background: ${({ transparent }) => transparent ? 'transparent' : '#262d2e'};
+    background: ${({ transparent }) => transparent ? 'transparent' : '#202525'};
     transition: .3s ease-in;
     padding: 0 20px;
     z-index: 3;

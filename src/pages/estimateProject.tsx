@@ -11,7 +11,7 @@ const EstimateProject = () => {
             <Section>
                 <span style={{ width: '100%', textAlign: 'center', marginBottom: '30px' }}>
                     <H1><span>Got any business idea?</span>
-                        <span>Contact us!</span>
+                        <span> Contact us!</span>
                     </H1>
                     <P>Fill in the form below with Your offer</P>
                 </span>

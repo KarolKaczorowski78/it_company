@@ -11,6 +11,7 @@ const Button = styled.button<props>`
     border: 2px solid #00db53;
     background: none;
     border-radius: 10%;
+    border: none;
     color: #00db53;
     font-size: 30px;
 `;
